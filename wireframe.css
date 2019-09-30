@@ -25,11 +25,16 @@ nav {
   z-index: 10;
 }
 
-
+.navLinks {
+  margin: 0 10px;
+}
 
 header {
   padding: 12% 0;
+  align-content: center;
+
 }
+
 
 section {
   min-height: 200px;
@@ -41,6 +46,52 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
-.screen {
-    width: 75%;
+
+
+.me {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 130px;
+}
+
+.infoLinks {
+  display: none;
+}
+
+footer {
+  position: fixed:
+  bottom: 0;
+}
+
+@media screen and (min-width: 800px) {
+  
+
+  nav, .projects, h1 {
+    display: none;
+  }
+
+  .infoLinks {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin-top: 20px;
+  }
+
+  main {
+    display: flex;
+  }
+
+  header {
+    width: 25vw;
+  }
+
+  .about {
+    width: 75vw;
+    padding-top: 20vh;
+  }
+
 }
